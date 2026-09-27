@@ -1,11 +1,11 @@
 :root {
-  --bg: #f7f4ef;
-  --text: #1e252b;
-  --muted: #5e6770;
+  --bg: #f5f8fa;
+  --text: #142b3b;
+  --muted: #526775;
   --card: #ffffff;
-  --accent: #183b56;
+  --accent: #10374b;
   --accent-light: #dce8f2;
-  --border: #ddd6cc;
+  --border: #dbe5ea;
   --shadow: 0 18px 45px rgba(30, 37, 43, 0.08);
 }
 
@@ -19,7 +19,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--text);
   background: var(--bg);
   line-height: 1.6;
@@ -42,7 +42,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(247, 244, 239, 0.94);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -82,8 +82,10 @@ a {
 .hero {
   padding: 90px 0 70px;
   background:
-    radial-gradient(circle at top right, rgba(24, 59, 86, 0.14), transparent 34%),
-    linear-gradient(135deg, #f7f4ef 0%, #efe7dc 100%);
+    radial-gradient(ellipse at 90% 15%, rgba(35, 155, 165, 0.24), transparent 45%),
+    linear-gradient(125deg, #092635 0%, #123e52 100%);
+  color: #ffffff;
+  border-bottom: 5px solid #258a94;
 }
 
 .hero-grid {
@@ -177,7 +179,7 @@ h3 {
   padding: 14px;
   border-radius: 24px;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(221, 214, 204, 0.8);
+  border: 1px solid rgba(16, 55, 75, 0.12);
   margin-bottom: 22px;
 }
 
@@ -195,7 +197,7 @@ h3 {
   padding: 32px;
   border-radius: 22px;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(221, 214, 204, 0.8);
+  border: 1px solid rgba(16, 55, 75, 0.12);
 }
 
 .hero-card ul {
@@ -208,7 +210,7 @@ h3 {
 }
 
 .alt {
-  background: #fffaf3;
+  background: #ffffff;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
@@ -314,4 +316,36 @@ h3 {
   h1 {
     font-size: 3rem;
   }
+}
+
+/* Refined leadership portfolio palette and accents. */
+h1, h2 { font-family: Georgia, "Times New Roman", serif; }
+.hero .eyebrow { color: #8dd9db; }
+.hero .tagline { color: #d5eaef; }
+.hero .hero-text { color: #d1dfe7; }
+.hero .primary { background: #a4e2df; color: #092635; }
+.hero .secondary { border-color: #90b5c5; color: #ffffff; }
+.hero-card { color: var(--text); border-radius: 14px; }
+.hero-card h2 { font-size: 1.8rem; }
+.portrait-card { padding: 8px; border-radius: 16px; background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.3); }
+.portrait { border-radius: 10px; }
+.button { border-radius: 8px; transition: background .18s ease, transform .18s ease; }
+.button:hover { transform: translateY(-2px); }
+.button:focus-visible, .nav-links a:focus-visible { outline: 3px solid #258a94; outline-offset: 5px; }
+.card { border-radius: 12px; border-top: 4px solid #258a94; box-shadow: 0 8px 24px rgba(16,55,75,.045); }
+.card h3 { color: #10374b; }
+.intro { background: #eaf3f5; }
+#speaking { background: #eaf3f5; border-top: 1px solid #d0e3e7; border-bottom: 1px solid #d0e3e7; }
+#speaking .eyebrow { color: #17656d; }
+.contact-section { background: #10374b; color: #ffffff; }
+.contact-section .eyebrow { color: #8dd9db; }
+.contact-section p { color: #d9e6ed; }
+.contact-section a { color: #a4e2df; overflow-wrap: anywhere; }
+.site-footer { background: #092635; color: #b7cbd5; }
+.section { scroll-margin-top: 80px; }
+@media (max-width: 850px) { .section { scroll-margin-top: 130px; } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .button { transition: none; }
+  .button:hover { transform: none; }
 }
